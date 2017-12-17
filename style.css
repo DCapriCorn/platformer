@@ -1,0 +1,160 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    z-index: 1;
+    width: 600px;
+    height: 360px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+li {
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.wrapper {
+    width: 600px;
+    height: 360px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.achievements {
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    top: 5px;
+    margin-left: 600px;
+    border: 1px solid black;
+}
+
+.achievements .achieve-block {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#menu {
+    position: absolute;
+    width: 600px;
+    height: 360px;
+    border: 1px solid black;
+    z-index: 2;
+    text-align: center;
+    background-color: grey;
+}
+
+#menu.main {
+    background-image: url('imgs/menu-bg.jpg');
+}
+
+#progress {
+    height: 12%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#percent {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#progress-bar {
+    width: 200px;
+}
+
+#main {
+    display: none;
+    height: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#main h1 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #444343;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: #444446;
+    background-image: -webkit-linear-gradient(bottom, #877b84 0%, #222224 100%);
+    background-image: linear-gradient(to bottom, #877b84 0%, #222224 100%);
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #643417;
+    background-image: -webkit-linear-gradient(bottom, #893e1c 0%, #572910 100%);
+    background-image: linear-gradient(to bottom, #893e1c 0%, #572910 100%);
+}
+
+.back, .back:hover {
+    margin-top: 10px;
+}
+
+#game-over {
+    display: none;
+    text-align: center;
+    padding-top: 92px;
+    z-index: 1;
+    width: 600px;
+    height: 360px;
+    position: absolute;
+}
+
+#continue-game {
+    display: none;
+    text-align: center;
+    padding-top: 92px;
+    z-index: 1;
+    width: 600px;
+    height: 360px;
+    position: absolute;
+}
